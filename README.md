@@ -101,4 +101,45 @@ Antes de seguir con la configuraci&oacute;n de tu App Service, aseg&uacute;rate 
 
 Si ya tienes el repositorio forkeado en tu cuenta, podemos seguir.
 
-Desde la lista de [App Service](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites) accede al que acabas de crear. Se abrir&aacute; el overview de tu App Service.
+Desde la lista de [App Services](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites) accede al que acabas de crear. Se abrir&aacute; el overview de tu App Service. En el men&uacute; de la izquierda, ve a **Deployment** `>` **Deployment Center**.
+
+Dentro del Deployment Center, en el campo Source, selecciona **GitHub**.
+
+![Deployment center de tu App Service](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/dc01.png)
+
+Se te pedir&aacute; que inicies sesi&oacute;n con tus credenciales de GitHub. Sigue el proceso para iniciar sesi&oacute;n.
+
+Una vez tu sesi&oacute;n est&eacute; activa en Azure, se desplegar&aacute;n los siguientes campos:
+
+| Campo        | Valor                             |
+| ------------ | --------------------------------- |
+| Organization | *Selecciona tu nombre de usuario* |
+| Repository   | `azure_java_basic_example`        |
+| Branch       | `main`                            |
+
+Despu&eacute;s de llenar los campos, en la parte de arriba haz clic en **Save**. Esto crear&aacute; una GitHub Action en tu repositorio, la cual ser&aacute; usada para el despliegue de la aplicaci&oacute;n. Espera un par de minutos antes de acceder a tu aplicaci&oacute;n.
+
+Para acceder a tu aplicaci&oacute;n reemplaza en la siguiente liga el nombre de tu App Service: [https://**REPLACE_ME**.azurewebsites.net/](https://REPLACE_ME.azurewebsites.net/).
+
+**&iexcl;Listo&excl;** Tu aplicaci&oacute;n est&aacute; al aire.
+
+![Hello World&excl;](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/app01.png)
+
+# CI/CD con GitHub
+
+La aplicaci&oacute;n que acabas de desplegar existe como un repositorio en tu cuenta de GitHub. Para acceder a ese repositorio, reemplaza en esta liga tu nombre de usuario: [https://github.com/**REPLACE_ME**/azure_java_basic_example](https://github.com/REPLACE_ME/azure_java_basic_example).
+
+Una de las ventajas que ofrece Azure con GitHub Actions es que puedes desplegar tu c&oacute;digo inmediatamente cada que hay cambios. Para demostrar esto, accede al siguiente archivo `/src/main/webapp/index.jsp`. Una vez en el archivo, haz clic en el &iacute;cono de editar para modificar el archivo.
+
+![Editar archivo](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/app01.png)
+
+En la l&iacute;nea 24 del archivo, reemplaza la leyenda `AQU&Iacute;` con tu nombre. Por ejemplo:
+
+``` html
+<p>Mi nombre aparecer&aacute; <strong><code>Angel Alonso</code></strong></p>
+```
+
+En la parte inferior, selecciona **Commit changes**. Esto desencadenar&aacute; la GitHub Action, que desplegar&aacute; tu nueva aplicaci&oacute;n a tu App Service.
+
+![Aplicaci&oacute;n actualizada](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/app02.png)
+
