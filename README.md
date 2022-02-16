@@ -131,7 +131,7 @@ La aplicaci&oacute;n que acabas de desplegar existe como un repositorio en tu cu
 
 Una de las ventajas que ofrece Azure con GitHub Actions es que puedes desplegar tu c&oacute;digo inmediatamente cada que hay cambios. Para demostrar esto, accede al siguiente archivo `/src/main/webapp/index.jsp`. Una vez en el archivo, haz clic en el &iacute;cono de editar para modificar el archivo.
 
-![Editar archivo](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/app01.png)
+![Editar archivo](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/gh01.png)
 
 En la l&iacute;nea 24 del archivo, reemplaza la leyenda `AQU&Iacute;` con tu nombre. Por ejemplo:
 
