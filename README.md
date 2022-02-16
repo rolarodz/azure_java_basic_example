@@ -71,7 +71,7 @@ Listo, ya tienes tu App Service plan creado.
 
 Excelente, ya casi terminamos de crear tu aplicaci&oacute;n en Azure. Lo que toca ahora es crear el *App Service* como tal. Un App Service es una aplicaci&oacute;n que corre sobre tu App Service plan, y est&aacute; ligado a las particularidades de ese plan, como por ejemplo la memoria RAM, el CPU, el Sistema Operativo, entre otras cosas.
 
-Para crear tu App Service, ingresa a la secci&oacute;n de [App Service](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites) y haz clic en el bot&oacute;n **Create**.
+Para crear tu App Service, ingresa a la secci&oacute;n de [App Services](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites) y haz clic en el bot&oacute;n **Create**.
 
 ![Crear App Service](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/as01.png)
 
@@ -109,7 +109,7 @@ Dentro del Deployment Center, en el campo Source, selecciona **GitHub**.
 
 Se te pedir&aacute; que inicies sesi&oacute;n con tus credenciales de GitHub. Sigue el proceso para iniciar sesi&oacute;n.
 
-Una vez tu sesi&oacute;n est&eacute; activa en Azure, se desplegar&aacute;n los siguientes campos:
+Una vez tu sesi&oacute;n est&eacute; activa en Azure, una lista de campos se desplegar&aacute;. Rellena los campos como se indica a continuaci&oacute;n.
 
 | Campo        | Valor                             |
 | ------------ | --------------------------------- |
@@ -143,3 +143,12 @@ En la parte inferior, selecciona **Commit changes**. Esto desencadenar&aacute; l
 
 ![Aplicaci&oacute;n actualizada](https://raw.githubusercontent.com/it-influencers-mx/azure_java_basic_example/main/docs/imgs/app02.png)
 
+Como puedes ver, los cambios que hicimos al archivo `index.jsp` se ven reflejados de forma autom&aacute;gica `;)`.
+
+# Siguientes pasos
+
+Espero que este taller haya sido de tu agrado. Si tienes alguna pregunta, no dudes en contactarme. Puedes consultar m&aacute;s material sobre las tecnolog&iacute;as utilizadas en la documentaci&oacute;n oficial.
+
+* [Azure App Service](https://azure.microsoft.com/es-mx/services/app-service/)
+* [GitHub Actions](https://github.com/features/actions)
+* [Maven](https://maven.apache.org/)
